@@ -5,6 +5,11 @@ function Test-IsVanillaWindow
         # Console
         return $false
     }
+    else
+    {
+        # Powershell
+        return $true
+    }
 }
 
 function Get-Home
@@ -22,7 +27,7 @@ function Get-Provider
         $path
     )
 
-    return (Get-Item $path).PSProvider.Name
+    return (Get-Item $path).PSProvider
 }
 
 function Get-Drive
