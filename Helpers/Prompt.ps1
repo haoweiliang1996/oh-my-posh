@@ -5,11 +5,6 @@ function Test-IsVanillaWindow
         # Console
         return $false
     }
-    else
-    {
-        # Powershell
-        return $true
-    }
 }
 
 function Get-Home
